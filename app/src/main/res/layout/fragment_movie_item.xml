@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MovieItemFragment">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/imageFrame"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/posterImage"
+                android:src="@drawable/image_demo"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/movie_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/four_hundred_dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@drawable/gradiend_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:text="Movie Title"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/sixteen_dp"
+            android:text="Create and manage production releases to make your app available to all users in your chosen countries. Learn more Create and manage production releases to make your app available to all users in your chosen countries. Learn more"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/releaseDateTextView"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:text="10 - 06 - 2020"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/ratingTextView"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/sixteen_dp"
+            android:text="4.6"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/languageTextView"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/sixteen_dp"
+            android:text="en"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
