@@ -14,7 +14,7 @@
 
         <ImageView
             android:id="@+id/posterImageView"
-            android:src="@drawable/image_demo"
+            android:transitionName="image_small"
             android:scaleType="centerCrop"
             android:contentDescription="@string/movie_image"
             android:layout_width="match_parent"

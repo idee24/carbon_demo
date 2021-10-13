@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/posterImage"
-                android:src="@drawable/image_demo"
                 android:scaleType="centerCrop"
+                android:transitionName="image_large"
                 android:contentDescription="@string/movie_image"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/four_hundred_dp"/>
@@ -38,7 +38,6 @@
             android:id="@+id/titleTextView"
             android:textColor="@color/white"
             android:layout_marginStart="@dimen/sixteen_dp"
-            android:text="Movie Title"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_width="wrap_content"
@@ -48,7 +47,6 @@
             android:id="@+id/descriptionTextView"
             android:textColor="@color/white"
             android:layout_margin="@dimen/sixteen_dp"
-            android:text="Create and manage production releases to make your app available to all users in your chosen countries. Learn more Create and manage production releases to make your app available to all users in your chosen countries. Learn more"
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -57,7 +55,6 @@
             android:id="@+id/releaseDateTextView"
             android:textColor="@color/white"
             android:layout_marginStart="@dimen/sixteen_dp"
-            android:text="10 - 06 - 2020"
             android:textSize="16sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -66,7 +63,6 @@
             android:id="@+id/ratingTextView"
             android:textColor="@color/white"
             android:layout_margin="@dimen/sixteen_dp"
-            android:text="4.6"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_width="wrap_content"
@@ -76,7 +72,6 @@
             android:id="@+id/languageTextView"
             android:textColor="@color/white"
             android:layout_marginStart="@dimen/sixteen_dp"
-            android:text="en"
             android:textStyle="bold"
             android:textSize="20sp"
             android:layout_width="wrap_content"
